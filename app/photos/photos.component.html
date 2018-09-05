@@ -1,0 +1,12 @@
+<!-- <button type="button" (click)="makeRequestPhotos()">Photos</button> -->
+<!-- <div *ngIf="loading">loading...</div> -->
+
+
+     <!-- <tr > <th>AlbumId</th><th>id</th><th>Title</th><th>Url</th><th>ThumbnailUrl</th></tr> -->
+  
+   
+    <app-photo *ngFor="let photo of photoList" [photo]="photo"></app-photo>
+
+   
+  
+

@@ -1,0 +1,31 @@
+
+<div class="page-header">
+  <div class="container">
+     <div class="navLinks">
+       <ul>
+     <li> <a [routerLink]="['/home']" >Home</a></li>
+   <li> <a [routerLink]="['/photos']" >Photos</a></li>
+    <li><a [routerLink]="['/albums']">Albums </a> </li> 
+    <li><a [routerLink]="['/users']">Users </a> </li>
+    <li><a [routerLink]="['/form']">Register </a> </li></ul>
+
+    </div>
+  </div> 
+</div>
+<br>
+<!-- 
+  We need to add a directive called router-outlet somewhere in our template HTML. This directive
+tells Angular where it should insert each of those components in the route, we’ll add ours to the
+AppComponent, like so:
+<app-header></app-header>
+<div class="m-t-1">
+<router-outlet></router-outlet> ①
+</div>
+①We place <router-outlet> where we want the component inserted.
+
+ -->
+<div id="content">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
